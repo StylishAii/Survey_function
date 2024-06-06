@@ -1,0 +1,11 @@
+{
+    "require": {
+        "tedivm/jshrink": "^1.4",
+        "yahnis-elsts/plugin-update-checker": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SANGO\\": "./library/classes/" 
+        }
+    }
+}

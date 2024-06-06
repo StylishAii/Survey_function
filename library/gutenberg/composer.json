@@ -1,0 +1,12 @@
+{
+  "require": {
+    "embed/embed": "^3.4",
+    "caseyamcl/toc": "^3.1",
+    "tedivm/jshrink": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "SangoBlocks\\": "./dist/classes/"
+    }
+  }
+}

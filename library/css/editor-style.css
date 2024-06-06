@@ -1,0 +1,1717 @@
+/*For Classic Editor CSS*/
+body#tinymce.wp-editor {
+	font-family: "Arial", "Hiragino Sans", "ヒラギノ角ゴシック", YuGothic,
+	"Yu Gothic", "メイリオ", Meiryo, sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+	color: #555;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 0.5em 0.5em 0;
+}
+body#tinymce.wp-editor article,
+body#tinymce.wp-editor aside,
+body#tinymce.wp-editor details,
+body#tinymce.wp-editor figcaption,
+body#tinymce.wp-editor figure,
+body#tinymce.wp-editor footer,
+body#tinymce.wp-editor header,
+body#tinymce.wp-editor hgroup,
+body#tinymce.wp-editor main,
+body#tinymce.wp-editor nav,
+body#tinymce.wp-editor section,
+body#tinymce.wp-editor summary {
+	display: block;
+}
+body#tinymce.wp-editor audio,
+body#tinymce.wp-editor canvas,
+body#tinymce.wp-editor video {
+	display: inline-block;
+}
+body#tinymce.wp-editor audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+body#tinymce.wp-editor [hidden],
+body#tinymce.wp-editor template {
+	display: none;
+}
+body#tinymce.wp-editor html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body#tinymce.wp-editor body {
+	margin: 0;
+}
+body#tinymce.wp-editor a {
+	background: transparent;
+}
+body#tinymce.wp-editor a:focus {
+	outline: thin dotted;
+}
+body#tinymce.wp-editor a:active,
+body#tinymce.wp-editor a:hover {
+	outline: 0;
+}
+body#tinymce.wp-editor h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+body#tinymce.wp-editor abbr[title] {
+	border-bottom: 1px dotted;
+}
+body#tinymce.wp-editor b,
+body#tinymce.wp-editor strong,
+body#tinymce.wp-editor .strong {
+	font-weight: bold;
+}
+body#tinymce.wp-editor dfn,
+body#tinymce.wp-editor em,
+body#tinymce.wp-editor .em {
+	font-style: italic;
+}
+body#tinymce.wp-editor hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+}
+body#tinymce.wp-editor pre {
+	margin: 0;
+}
+body#tinymce.wp-editor code,
+body#tinymce.wp-editor kbd,
+body#tinymce.wp-editor pre,
+body#tinymce.wp-editor samp {
+	font-family: monospace, serif;
+	font-size: 1em;
+}
+body#tinymce.wp-editor pre {
+	white-space: pre-wrap;
+}
+body#tinymce.wp-editor q {
+	quotes: "\201C""\201D""\2018""\2019";
+}
+body#tinymce.wp-editor q:before,
+body#tinymce.wp-editor q:after {
+	content: "";
+	content: none;
+}
+body#tinymce.wp-editor small,
+body#tinymce.wp-editor .small {
+	font-size: 75%;
+}
+
+body#tinymce.wp-editor dl,
+body#tinymce.wp-editor menu,
+body#tinymce.wp-editor ol,
+body#tinymce.wp-editor ul {
+	margin: 1em 0;
+}
+body#tinymce.wp-editor dd {
+	margin: 0;
+}
+body#tinymce.wp-editor menu {
+	padding: 0 0 0 40px;
+}
+body#tinymce.wp-editor nav ul,
+body#tinymce.wp-editor nav ol {
+	list-style: none;
+	list-style-image: none;
+}
+body#tinymce.wp-editor img {
+	border: 0;
+}
+body#tinymce.wp-editor svg:not(:root) {
+	overflow: hidden;
+}
+body#tinymce.wp-editor figure {
+	margin: 0;
+}
+body#tinymce.wp-editor fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+body#tinymce.wp-editor legend {
+	border: 0;
+	/* 1 */
+	padding: 0;
+	/* 2 */
+}
+body#tinymce.wp-editor button,
+body#tinymce.wp-editor input,
+body#tinymce.wp-editor select,
+body#tinymce.wp-editor textarea {
+	font-family: inherit;
+	/* 1 */
+	font-size: 100%;
+	/* 2 */
+	margin: 0;
+	/* 3 */
+}
+body#tinymce.wp-editor button,
+body#tinymce.wp-editor input {
+	line-height: normal;
+}
+body#tinymce.wp-editor button,
+body#tinymce.wp-editor select {
+	text-transform: none;
+}
+body#tinymce.wp-editor button,
+body#tinymce.wp-editor html input[type="button"],
+body#tinymce.wp-editor input[type="reset"],
+body#tinymce.wp-editor input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+body#tinymce.wp-editor button[disabled],
+body#tinymce.wp-editor html input[disabled] {
+	cursor: default;
+}
+body#tinymce.wp-editor input[type="checkbox"],
+body#tinymce.wp-editor input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+body#tinymce.wp-editor input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+body#tinymce.wp-editor input[type="search"]::-webkit-search-cancel-button,
+body#tinymce.wp-editor input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+body#tinymce.wp-editor button::-moz-focus-inner,
+body#tinymce.wp-editor input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+body#tinymce.wp-editor textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+body#tinymce.wp-editor table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body#tinymce.wp-editor * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body#tinymce.wp-editor .image-replacement,
+body#tinymce.wp-editor .ir {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+body#tinymce.wp-editor .clearfix,
+body#tinymce.wp-editor .cf {
+	zoom: 1;
+}
+body#tinymce.wp-editor .clearfix:before,
+body#tinymce.wp-editor .clearfix:after,
+body#tinymce.wp-editor .cf:before,
+body#tinymce.wp-editor .cf:after {
+	content: "";
+	display: table;
+}
+body#tinymce.wp-editor .clearfix:after,
+body#tinymce.wp-editor .cf:after {
+	clear: both;
+}
+body#tinymce.wp-editor span.amp {
+	font-family: Baskerville, "Goudy Old Style", Palatino, "Book Antiqua", serif !important;
+	font-style: italic;
+}
+body#tinymce.wp-editor p {
+	word-break: break-word;
+	word-wrap: break-word;
+}
+body#tinymce.wp-editor a,
+body#tinymce.wp-editor a:visited {
+	color: #2980b9;
+}
+body#tinymce.wp-editor a:hover,
+body#tinymce.wp-editor a:focus,
+body#tinymce.wp-editor a:visited:hover,
+body#tinymce.wp-editor a:visited:focus {
+	color: #216693;
+}
+body#tinymce.wp-editor a:link,
+body#tinymce.wp-editor a:visited:link {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+body#tinymce.wp-editor h1,
+body#tinymce.wp-editor .h1,
+body#tinymce.wp-editor h2,
+body#tinymce.wp-editor .h2,
+body#tinymce.wp-editor h3,
+body#tinymce.wp-editor .h3,
+body#tinymce.wp-editor h4,
+body#tinymce.wp-editor .h4,
+body#tinymce.wp-editor h5,
+body#tinymce.wp-editor .h5 {
+	text-rendering: optimizelegibility;
+	font-weight: bold;
+}
+body#tinymce.wp-editor h1 a,
+body#tinymce.wp-editor .h1 a,
+body#tinymce.wp-editor h2 a,
+body#tinymce.wp-editor .h2 a,
+body#tinymce.wp-editor h3 a,
+body#tinymce.wp-editor .h3 a,
+body#tinymce.wp-editor h4 a,
+body#tinymce.wp-editor .h4 a,
+body#tinymce.wp-editor h5 a,
+body#tinymce.wp-editor .h5 a {
+	text-decoration: none;
+}
+body#tinymce.wp-editor h1,
+body#tinymce.wp-editor .h1 {
+	font-size: 2em;
+	line-height: 1.333em;
+}
+body#tinymce.wp-editor h2,
+body#tinymce.wp-editor .h2 {
+	margin: 2em 0 1em;
+	font-size: 1.4em;
+	line-height: 1.4;
+	margin-bottom: 0.375em;
+}
+body#tinymce.wp-editor h3,
+body#tinymce.wp-editor .h3 {
+	font-size: 1.125em;
+	margin: 2em 0 0.7em;
+	border-left: solid 4px silver;
+	padding: 0.5em;
+}
+body#tinymce.wp-editor h4,
+body#tinymce.wp-editor .h4 {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 2em 0 0.7em;
+}
+body#tinymce.wp-editor h5,
+body#tinymce.wp-editor .h5 {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+body#tinymce.wp-editor p {
+	margin: 0 0 1.5em;
+}
+body#tinymce.wp-editor table {
+	width: 100%;
+	border: 1px solid #eaedf2;
+	margin-bottom: 1.5em;
+}
+body#tinymce.wp-editor table caption {
+	margin: 0 0 7px;
+	font-size: 0.75em;
+	color: #9fa6b4;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+body#tinymce.wp-editor tr {
+	border-bottom: 1px solid #eaedf2;
+}
+body#tinymce.wp-editor tr:nth-child(even) {
+	background-color: #f8f9fa;
+}
+body#tinymce.wp-editor td {
+	padding: 7px;
+	border-right: 1px solid #eaedf2;
+}
+body#tinymce.wp-editor td:last-child {
+	border-right: 0;
+}
+body#tinymce.wp-editor th {
+	background-color: #f8f9fa;
+	border-bottom: 1px solid #eaedf2;
+	border-right: 1px solid #eaedf2;
+}
+body#tinymce.wp-editor th:last-child {
+	border-right: 0;
+}
+body#tinymce.wp-editor blockquote {
+	margin: 0 0 1.5em 0.75em;
+	padding: 0 0 0 0.75em;
+	border-left: 3px solid #2980b9;
+	font-style: italic;
+	color: #9fa6b4;
+}
+body#tinymce.wp-editor dd {
+	margin-left: 0;
+	font-size: 0.9em;
+	color: #787878;
+	margin-bottom: 1.5em;
+}
+body#tinymce.wp-editor img {
+	margin: 0;
+	max-width: 100%;
+	height: auto;
+}
+body#tinymce.wp-editor .size-auto,
+body#tinymce.wp-editor .size-full,
+body#tinymce.wp-editor .size-large,
+body#tinymce.wp-editor .size-medium,
+body#tinymce.wp-editor .size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+/*******オリジナルのスタイル*******/
+/*画像系*/
+body#tinymce.wp-editor img.img_so_small {
+	max-width: 250px;
+}
+body#tinymce.wp-editor img.img_small {
+	max-width: 350px;
+}
+body#tinymce.wp-editor img.img_border {
+	border: solid 3px #eaedf2;
+}
+body#tinymce.wp-editor .shadow {
+	box-shadow: var(--wp--custom--shadow--medium);
+}
+body#tinymce.wp-editor img.bigshadow {
+	box-shadow: var(--wp--custom--shadow--large);
+}
+
+/*文字装飾*/
+body#tinymce.wp-editor .orange {
+	color: #ffb36b;
+}
+body#tinymce.wp-editor .green {
+	color: #75c375;
+}
+body#tinymce.wp-editor .blue {
+	color: #009EF3;
+}
+body#tinymce.wp-editor .red {
+	color: #ee7b7b;
+}
+body#tinymce.wp-editor .silver {
+	color: silver;
+}
+body#tinymce.wp-editor .main-c {
+	color: #009EF3;
+}
+body#tinymce.wp-editor .accent-c {
+	color: #ffb36b;
+}
+body#tinymce.wp-editor .keiko_blue {
+	background: linear-gradient(transparent 50%, rgba(107, 182, 255, 0.24) 50%);
+}
+body#tinymce.wp-editor .keiko_yellow {
+	background: linear-gradient(transparent 50%, rgba(255, 252, 107, 0.69) 50%);
+}
+body#tinymce.wp-editor .keiko_green {
+	background: linear-gradient(transparent 50%, rgba(151, 232, 154, 0.69) 50%);
+}
+body#tinymce.wp-editor .keiko_red {
+	background: linear-gradient(transparent 50%, rgba(255, 88, 88, 0.24) 50%);
+}
+body#tinymce.wp-editor .big {
+	font-size: 1.2em;
+}
+body#tinymce.wp-editor .sobig {
+	font-size: 2em;
+}
+body#tinymce.wp-editor .center {
+	text-align: center;
+}
+
+body#tinymce.wp-editor .shake {
+	display: inline-block;
+	animation: shaking 0.1s infinite;
+}
+
+@keyframes shaking {
+	0% {
+	transform: translate(0, 0) rotate(0deg);
+	}
+	33% {
+	transform: translate(0, 2px) rotate(1deg);
+	}
+	66% {
+	transform: translate(2px, 0) rotate(-1deg);
+	}
+	100% {
+	transform: translate(0, 0) rotate(0deg);
+	}
+}
+
+/*********************
+1. 見出し（カスタマイザーのスタイルから挿入）
+*********************/
+/*通常の見出し指定が重ならないようにリセット*/
+body#tinymce.wp-editor .hh {
+	font-weight: bold;
+	border: 0;
+	padding: 0.3em;
+	margin: 2em 0 1em;
+	background: transparent;
+	box-shadow: none;
+	font-weight: bold;
+}
+body#tinymce.wp-editor p.hh {
+	font-size: 1.2em;
+}
+body#tinymce.wp-editor .hh:before,
+body#tinymce.wp-editor .hh:after {
+	content: none;
+	top: auto;
+	left: auto;
+	right: auto;
+	bottom: auto;
+	border: 0;
+	box-shadow: none;
+	background: transparent;
+}
+/*ENDリセット*/
+
+/*Q & A*/
+body#tinymce.wp-editor .hh.hhq,
+body#tinymce.wp-editor .hh.hha {
+	position: relative;
+	margin: 0;
+	padding: 0 0 0 55px;
+	font-size: 18px;
+}
+body#tinymce.wp-editor .hh.hhq + *,
+body#tinymce.wp-editor .hh.hha + * {
+	margin-top: 1.5em;
+}
+body#tinymce.wp-editor .hh.hhq:before,
+body#tinymce.wp-editor .hh.hha:before {
+	content: "Q";
+	position: absolute;
+	left: 0;
+	top: -7px;
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	vertical-align: middle;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-size: 21px;
+	background: #75bbff;
+	color: #fff;
+	border-radius: 50%;
+}
+body#tinymce.wp-editor .hh.hhq + .hh.hha {
+	margin-top: 2em;
+	font-size: 17px;
+}
+body#tinymce.wp-editor .hh.hha:before {
+	content: "A";
+	background: #ff8d8d;
+}
+
+/*下線見出し*/
+body#tinymce.wp-editor .hh1 {
+	border-bottom: solid 3px black;
+}
+
+/*見出し（点線下線）*/
+body#tinymce.wp-editor .hh2 {
+	color: #6bb6ff;
+	border-bottom: dashed 2px #6bb6ff;
+}
+
+/*二重線下線*/
+body#tinymce.wp-editor .hh3 {
+	border-bottom: double 5px #6bb6ff;
+}
+
+/*上下線*/
+body#tinymce.wp-editor .hh4 {
+	color: #6bb6ff;
+	padding: 0.5em 0;
+	border-top: solid 3px #6bb6ff;
+	border-bottom: solid 3px #6bb6ff;
+}
+
+/*シンプル塗りつぶし*/
+body#tinymce.wp-editor .hh5 {
+	background: #c2edff;
+	padding: 0.5em;
+}
+
+/*囲い枠*/
+body#tinymce.wp-editor .hh6 {
+	color: #6bb6ff;
+	border: solid 3px #6bb6ff;
+	padding: 0.5em;
+	border-radius: 0.5em;
+}
+
+/*背景色＋下線*/
+body#tinymce.wp-editor .hh7 {
+	padding: 0.5em;
+	color: #010101;
+	background: var(--wp--preset--color--sango-pastel);
+	border-bottom: solid 3px #6bb6ff;
+}
+
+/*オレンジ見出し*/
+body#tinymce.wp-editor .hh8 {
+	padding: 0.5em;
+	color: #494949;
+	background: #fffaf4;
+	border-left: solid 5px #ffaf58;
+}
+
+/*影付き*/
+body#tinymce.wp-editor .hh9 {
+	padding: 0.5em;
+	background: var(--wp--preset--color--sango-pastel);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.23);
+}
+
+/*タグ風*/
+body#tinymce.wp-editor .hh10 {
+	color: #505050;
+	padding: 0.5em;
+	display: inline-block;
+	line-height: 1.3;
+	background: var(--wp--preset--color--sango-pastel);
+	vertical-align: middle;
+	border-radius: 25px 0px 0px 25px;
+}
+body#tinymce.wp-editor .hh10:before {
+	display: inline-block;
+	content: "●";
+	color: white;
+	margin-right: 8px;
+}
+
+/*吹き出し風*/
+body#tinymce.wp-editor .hh11 {
+	position: relative;
+	padding: 0.6em;
+	background: var(--wp--preset--color--sango-pastel);
+}
+body#tinymce.wp-editor .hh11:after {
+	position: absolute;
+	content: "";
+	top: 100%;
+	left: 30px;
+	border: 15px solid transparent;
+	border-top: 15px solid var(--wp--preset--color--sango-pastel);
+	width: 0;
+	height: 0;
+}
+
+/*ステッチ風*/
+body#tinymce.wp-editor .hh12 {
+	background: var(--wp--preset--color--sango-pastel);
+	box-shadow: 0px 0px 0px 5px var(--wp--preset--color--sango-pastel);
+	margin-left: 5px;
+	margin-right: 5px;
+	border: dashed 1px #96c2fe;
+	padding: 0.2em 0.5em;
+	color: #454545;
+}
+
+/*ステッチ白*/
+body#tinymce.wp-editor .hh13 {
+	background: var(--wp--preset--color--sango-pastel);
+	box-shadow: 0px 0px 0px 5px var(--wp--preset--color--sango-pastel);
+	margin-left: 5px;
+	margin-right: 5px;
+	border: dashed 1px #fff;
+	padding: 0.2em 0.5em;
+	color: #454545;
+}
+
+/*角が剥がれかけ*/
+body#tinymce.wp-editor .hh14 {
+	position: relative;
+	background: var(--wp--preset--color--sango-pastel);
+	box-shadow: 0px 0px 0px 5px var(--wp--preset--color--sango-pastel);
+	border: dashed 2px white;
+	padding: 0.2em 0.5em;
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #454545;
+}
+
+body#tinymce.wp-editor .hh14:after {
+	position: absolute;
+	content: "";
+	left: -7px;
+	top: -7px;
+	border-width: 0 0 15px 15px;
+	border-style: solid;
+	border-color: #fff #fff #a8d4ff;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+/*片側折れ*/
+body#tinymce.wp-editor .hh15 {
+	position: relative;
+	padding: 0.5em;
+	background: #7fbae9;
+	color: white;
+}
+body#tinymce.wp-editor .hh15:before {
+	position: absolute;
+	content: "";
+	top: 100%;
+	left: 0;
+	border: none;
+	border-bottom: solid 15px transparent;
+	border-right: solid 20px #74a4cb;
+}
+
+/*片側折れ（別色）*/
+body#tinymce.wp-editor .hh16 {
+	position: relative;
+	padding: 0.5em;
+	background: #a6d3c8;
+	color: white;
+}
+body#tinymce.wp-editor .hh16:before {
+	position: absolute;
+	content: "";
+	top: 100%;
+	left: 0;
+	border: none;
+	border-bottom: solid 15px transparent;
+	border-right: solid 20px rgb(149, 158, 155);
+}
+
+/*色が変わる下線*/
+body#tinymce.wp-editor .hh17 {
+	border-bottom: solid 3px #cbcbcb;
+	position: relative;
+}
+
+body#tinymce.wp-editor .hh17:after {
+	position: absolute;
+	content: " ";
+	display: block;
+	border-bottom: solid 3px #6bb6ff;
+	bottom: -3px;
+	width: 30%;
+}
+
+/*色が変わる下線その2*/
+body#tinymce.wp-editor .hh18 {
+	border-bottom: solid 3px var(--wp--preset--color--sango-pastel);
+	position: relative;
+}
+
+body#tinymce.wp-editor .hh18:after {
+	position: absolute;
+	content: " ";
+	display: block;
+	border-bottom: solid 3px #6bb6ff;
+	bottom: -3px;
+	width: 30%;
+}
+
+/*下線やじるし*/
+body#tinymce.wp-editor .hh19 {
+	position: relative;
+	padding-left: 25px;
+}
+
+body#tinymce.wp-editor .hh19:before {
+	position: absolute;
+	content: "";
+	bottom: -3px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: none;
+	border-left: solid 15px transparent;
+	border-bottom: solid 15px rgb(119, 195, 223);
+}
+body#tinymce.wp-editor .hh19:after {
+	position: absolute;
+	content: "";
+	bottom: -3px;
+	left: 10px;
+	width: 100%;
+	border-bottom: solid 3px rgb(119, 195, 223);
+}
+
+/*背景ストライプ*/
+body#tinymce.wp-editor .hh20 {
+	text-shadow: 0 0 5px white;
+	padding: 0.3em 0.5em;
+	background: -webkit-repeating-linear-gradient(
+	-45deg,
+	#cce7ff,
+	#cce7ff 3px,
+	#e9f4ff 3px,
+	#e9f4ff 7px
+	);
+	background: repeating-linear-gradient(
+	-45deg,
+	#cce7ff,
+	#cce7ff 3px,
+	#e9f4ff 3px,
+	#e9f4ff 7px
+	);
+}
+
+/*背景ストライプ2*/
+body#tinymce.wp-editor .hh21 {
+	padding: 0.3em;
+	text-shadow: 0 0 5px white;
+	border-left: solid 7px #6bb6ff;
+	background: -webkit-repeating-linear-gradient(
+	-45deg,
+	#cce7ff,
+	#cce7ff 3px,
+	#e9f4ff 3px,
+	#e9f4ff 7px
+	);
+	background: repeating-linear-gradient(
+	-45deg,
+	#cce7ff,
+	#cce7ff 3px,
+	#e9f4ff 3px,
+	#e9f4ff 7px
+	);
+}
+
+/*ストライプ+上下線*/
+body#tinymce.wp-editor .hh22 {
+	color: #6cb4e4;
+	text-align: center;
+	padding: 0.25em;
+	border-top: solid 2px #6cb4e4;
+	border-bottom: solid 2px #6cb4e4;
+	background: -webkit-repeating-linear-gradient(
+	-45deg,
+	#f0f8ff,
+	#f0f8ff 3px,
+	#e9f4ff 3px,
+	#e9f4ff 7px
+	);
+	background: repeating-linear-gradient(
+	-45deg,
+	#f0f8ff,
+	#f0f8ff 3px,
+	#e9f4ff 3px,
+	#e9f4ff 7px
+	);
+}
+
+/*ストライプの下線*/
+body#tinymce.wp-editor .hh23 {
+	position: relative;
+	padding: 0.3em 0;
+}
+body#tinymce.wp-editor .hh23:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 7px;
+	background: -webkit-repeating-linear-gradient(
+	-45deg,
+	#6ad1c8,
+	#6ad1c8 2px,
+	#fff 2px,
+	#fff 4px
+	);
+	background: repeating-linear-gradient(
+	-45deg,
+	#6ad1c8,
+	#6ad1c8 2px,
+	#fff 2px,
+	#fff 4px
+	);
+}
+
+/*両端線のばし*/
+body#tinymce.wp-editor .hh24 {
+	position: relative;
+	display: inline-block;
+	padding: 0 55px;
+}
+
+body#tinymce.wp-editor .hh24:before,
+body#tinymce.wp-editor .hh24:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	width: 45px;
+	height: 1px;
+	background-color: black;
+}
+
+body#tinymce.wp-editor .hh24:before {
+	left: 0;
+}
+body#tinymce.wp-editor .hh24:after {
+	right: 0;
+}
+
+/*線を交差*/
+body#tinymce.wp-editor .hh25 {
+	position: relative;
+	text-align: center;
+	padding: 0.25em 1em;
+	border-top: solid 2px black;
+	border-bottom: solid 2px black;
+}
+body#tinymce.wp-editor .hh25:before,
+body#tinymce.wp-editor .hh25:after {
+	content: "";
+	position: absolute;
+	top: -7px;
+	width: 2px;
+	height: -webkit-calc(100% + 14px);
+	height: calc(100% + 14px);
+	background-color: black;
+}
+body#tinymce.wp-editor .hh25:before {
+	left: 7px;
+}
+body#tinymce.wp-editor .hh25:after {
+	right: 7px;
+}
+
+/*大カッコで囲う*/
+body#tinymce.wp-editor .hh26 {
+	position: relative;
+	line-height: 1.4;
+	padding: 0.25em 1em;
+	display: inline-block;
+	top: 0;
+}
+
+body#tinymce.wp-editor .hh26:before,
+body#tinymce.wp-editor .hh26:after {
+	position: absolute;
+	top: 0;
+	content: "";
+	width: 8px;
+	height: 100%;
+	display: inline-block;
+}
+body#tinymce.wp-editor .hh26:before {
+	border-left: solid 1px black;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	left: 0;
+}
+body#tinymce.wp-editor .hh26:after {
+	content: "";
+	border-top: solid 1px black;
+	border-right: solid 1px black;
+	border-bottom: solid 1px black;
+	right: 0;
+}
+
+/*一文字目だけ特大サイズに*/
+body#tinymce.wp-editor .hh27:first-letter {
+	font-size: 2em;
+}
+
+/*消えていく下線*/
+body#tinymce.wp-editor .hh28 {
+	position: relative;
+	padding: 0.25em 0;
+}
+body#tinymce.wp-editor .hh28:after {
+	content: "";
+	display: block;
+	height: 4px;
+	background: -moz-linear-gradient(to right, #6bb6ff, transparent);
+	background: -webkit-linear-gradient(to right, #6bb6ff, transparent);
+	background: linear-gradient(to right, #6bb6ff, transparent);
+}
+
+/*背景グラデーション*/
+body#tinymce.wp-editor .hh29 {
+	position: relative;
+	padding: 0.1em 0.5em;
+	background: -moz-linear-gradient(to right, rgb(255, 186, 115), transparent);
+	background: -webkit-linear-gradient(
+	to right,
+	rgb(255, 186, 115),
+	transparent
+	);
+	background: linear-gradient(to right, rgb(255, 186, 115), transparent);
+	color: #545454;
+}
+/*チェックマーク*/
+body#tinymce.wp-editor .hh30 {
+	position: relative;
+	padding-left: 1.2em;
+	line-height: 1.4;
+}
+body#tinymce.wp-editor .hh30:before {
+	font-family: FontAwesome;
+	content: "\f00c";
+	position: absolute;
+	font-size: 1em;
+	left: 0;
+	top: 0;
+	color: #5ab9ff;
+}
+
+/*シェブロンマーク*/
+body#tinymce.wp-editor .hh31 {
+	position: relative;
+	padding: 0.5em 0.5em 0.5em 1.5em;
+	line-height: 1.4;
+	color: #ff6a6a;
+	border-top: dotted 1px gray;
+	border-bottom: dotted 1px gray;
+	background: #fffff4;
+}
+
+body#tinymce.wp-editor .hh31:before {
+	font-family: FontAwesome; /*忘れずに*/
+	content: "\f138";
+	position: absolute;
+	font-size: 1em;
+	left: 0.25em;
+	top: 0.5em;
+	color: #ff6a6a;
+}
+
+/*フラット塗りつぶし*/
+body#tinymce.wp-editor .hh32 {
+	position: relative;
+	color: white;
+	background: #81d0cb;
+	line-height: 1.4;
+	padding: 0.5em 0.5em 0.5em 1.8em;
+}
+
+body#tinymce.wp-editor .hh32:before {
+	font-family: FontAwesome;
+	content: "\f14a";
+	position: absolute;
+	left: 0.5em;
+}
+/*角丸ぬりつぶし*/
+body#tinymce.wp-editor .hh33 {
+	background: #b0dcfa;
+	padding: 0.5em;
+	color: white;
+	border-radius: 0.5em;
+}
+
+/*肉球*/
+body#tinymce.wp-editor .hh34 {
+	position: relative;
+	padding-left: 1.2em;
+	color: #7b6459;
+}
+
+body#tinymce.wp-editor .hh34:before {
+	font-family: FontAwesome;
+	content: "\f1b0";
+	position: absolute;
+	font-size: 1em;
+	left: 0;
+	top: 0;
+	color: #ff938b;
+}
+
+body#tinymce.wp-editor .hh35 {
+	display: inline-block;
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	text-align: center;
+	padding: 0 30px;
+	background: #f57a78;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+body#tinymce.wp-editor .hh35:before,
+body#tinymce.wp-editor .hh35:after {
+	position: absolute;
+	content: "";
+	width: 0px;
+	height: 0px;
+	z-index: 1;
+}
+
+body#tinymce.wp-editor .hh35:before {
+	top: 0;
+	left: 0;
+	border-width: 25px 0px 25px 15px;
+	border-color: transparent transparent transparent #fff;
+	border-style: solid;
+}
+
+body#tinymce.wp-editor .hh35:after {
+	top: 0;
+	right: 0;
+	border-width: 25px 15px 25px 0px;
+	border-color: transparent #fff transparent transparent;
+	border-style: solid;
+}
+
+/*リボン片側カット*/
+body#tinymce.wp-editor .hh36 {
+	display: inline-block;
+	position: relative;
+	height: 60px;
+	line-height: 60px;
+	vertical-align: middle;
+	text-align: center;
+	padding: 0 40px 0 18px;
+	background: #ffc668;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+body#tinymce.wp-editor .hh36:after {
+	position: absolute;
+	content: "";
+	width: 0px;
+	height: 0px;
+	z-index: 1;
+}
+
+body#tinymce.wp-editor .hh36:after {
+	top: 0;
+	right: 0;
+	border-width: 30px 15px 30px 0px;
+	border-color: transparent #fff transparent transparent;
+	border-style: solid;
+}
+body#tinymce.wp-editor .nospace {
+	margin: 0 !important;
+}
+body#tinymce.wp-editor .smallspace {
+	margin: 1em 0 !important;
+}
+body#tinymce.wp-editor .haiiro {
+	font-size: 0.9em;
+	padding: 0.2em 0.3em;
+	background: #f3f6fc;
+	border-radius: 5px;
+}
+body#tinymce.wp-editor .labeltext {
+	display: inline-block;
+	padding: 5px;
+	line-height: 1;
+	color: #fff;
+	margin-right: 5px;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+body#tinymce.wp-editor .main-bc {
+	background: #6bb6ff;
+}
+body#tinymce.wp-editor .accent-bc {
+	background: #ffb36b;
+}
+/*ボックス*/
+body#tinymce.wp-editor .sng-box p {
+	margin: 0;
+	padding: 0;
+}
+body#tinymce.wp-editor .sng-box > *:first-child {
+	margin-top: 0;
+}
+body#tinymce.wp-editor .box1 {
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	border: solid 2px #000;
+	font-weight: bold;
+}
+
+body#tinymce.wp-editor .box2 {
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	border: solid 2px #d1d1d1;
+	border-radius: 5px;
+	background: #fff;
+}
+
+body#tinymce.wp-editor .box3 {
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	background: #edf6ff;
+	color: #2c2c2f;
+}
+
+body#tinymce.wp-editor .box4 {
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	border-top: solid 3px #6bb6ff;
+	border-bottom: solid 3px #6bb6ff;
+	background: #eef7ff;
+	color: #2c2c2f;
+}
+
+body#tinymce.wp-editor .box5 {
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	border: double 5px #4ec4d3;
+	color: #474747;
+}
+
+body#tinymce.wp-editor .box6 {
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	border: dashed 2px #6bb6ff;
+	background: #edf6ff;
+}
+
+body#tinymce.wp-editor .box7 {
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	border-right: double 7px #4ec4d3;
+	border-left: double 7px #4ec4d3;
+	background: whitesmoke;
+	color: #474747;
+}
+
+body#tinymce.wp-editor .box8 {
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	border-left: solid 6px #ffc06e;
+	background: #fff8e8;
+	color: #232323;
+}
+
+body#tinymce.wp-editor .box9 {
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	border-top: solid 6px #f47d7d;
+	background: #fceded;
+	color: #f47d7d;
+	font-weight: bold;
+}
+
+body#tinymce.wp-editor .box10 {
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	border-top: solid 6px #1dc1d6;
+	background: #e4fcff;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.22);
+	color: #00bcd4;
+}
+
+body#tinymce.wp-editor .box11 {
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	border-top: solid 5px #5d627b;
+	background: white;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.22);
+	color: #5d627b;
+}
+
+body#tinymce.wp-editor .box12 {
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	border-bottom: solid 6px #aac5de;
+	border-radius: 9px;
+	background: #c6e4ff;
+	color: #5989cf;
+	font-weight: bold;
+}
+
+body#tinymce.wp-editor .box13 {
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	border-bottom: solid 6px #3f87ce;
+	border-radius: 9px;
+	background: #6eb7ff;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.22);
+	color: #fff;
+	font-weight: bold;
+}
+
+body#tinymce.wp-editor .box14 {
+	margin: 2em 10px;
+	padding: 1.5em 1em;
+	border: dashed 2px white;
+	background: #d6ebff;
+	box-shadow: 0 0 0 10px #d6ebff;
+}
+
+body#tinymce.wp-editor .box15 {
+	margin: 2em 10px;
+	padding: 1.5em 1em;
+	border: dashed 2px #ffc3c3;
+	border-radius: 8px;
+	background: #ffeaea;
+	box-shadow: 0 0 0 10px #ffeaea;
+	color: #565656;
+}
+
+body#tinymce.wp-editor .box16 {
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	background: repeating-linear-gradient(
+	-45deg,
+	#f0f8ff,
+	#f0f8ff 3px,
+	#e9f4ff 3px,
+	#e9f4ff 7px
+	);
+}
+
+body#tinymce.wp-editor .box17 {
+	position: relative;
+	margin: 2em 0;
+	padding: 1em 2em;
+	border-top: solid 2px black;
+	border-bottom: solid 2px black;
+}
+
+body#tinymce.wp-editor .box17:before,
+body#tinymce.wp-editor .box17:after {
+	position: absolute;
+	top: -10px;
+	width: 2px;
+	height: -webkit-calc(100% + 20px);
+	height: calc(100% + 20px);
+	background-color: black;
+	content: "";
+}
+
+body#tinymce.wp-editor .box17:before {
+	left: 10px;
+}
+
+body#tinymce.wp-editor .box17:after {
+	right: 10px;
+}
+
+body#tinymce.wp-editor .box18 {
+	position: relative;
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	border: solid 2px #ffcb8a;
+	border-radius: 3px 0 3px 0;
+}
+
+body#tinymce.wp-editor .box18:before,
+body#tinymce.wp-editor .box18:after {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border: solid 2px #ffcb8a;
+	border-radius: 50%;
+	content: "";
+}
+
+body#tinymce.wp-editor .box18:after {
+	top: -12px;
+	left: -12px;
+}
+
+body#tinymce.wp-editor .box18:before {
+	right: -12px;
+	bottom: -12px;
+}
+
+body#tinymce.wp-editor .box19 {
+	position: relative;
+	padding: 1.5em 1em;
+}
+
+body#tinymce.wp-editor .box19:before,
+body#tinymce.wp-editor .box19:after {
+	display: inline-block;
+	position: absolute;
+	width: 20px;
+	height: 30px;
+	content: "";
+}
+
+body#tinymce.wp-editor .box19:before {
+	top: 0;
+	left: 0;
+	border-top: solid 1px #5767bf;
+	border-left: solid 1px #5767bf;
+}
+
+body#tinymce.wp-editor .box19:after {
+	right: 0;
+	bottom: 0;
+	border-right: solid 1px #5767bf;
+	border-bottom: solid 1px #5767bf;
+}
+
+body#tinymce.wp-editor .box20 {
+	position: relative;
+	top: 0;
+	margin: 2em 0;
+	padding: 1.5em 1em;
+	background: #efefef;
+}
+
+body#tinymce.wp-editor .box20:before,
+body#tinymce.wp-editor .box20:after {
+	display: inline-block;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	width: 15px;
+	height: 100%;
+	content: "";
+}
+
+body#tinymce.wp-editor .box20:before {
+	left: 0;
+	border-top: dotted 2px #15adc1;
+	border-bottom: dotted 2px #15adc1;
+	border-left: dotted 2px #15adc1;
+}
+
+body#tinymce.wp-editor .box20:after {
+	right: 0;
+	border-top: dotted 2px #15adc1;
+	border-right: dotted 2px #15adc1;
+	border-bottom: dotted 2px #15adc1;
+}
+
+body#tinymce.wp-editor .box21 {
+	margin: 2em 0;
+	padding: 1.3em;
+	background: linear-gradient(to left, #92d2f8, #c4baff);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.13);
+	color: #fff;
+	font-weight: bold;
+}
+
+body#tinymce.wp-editor .box22 {
+	margin: 1em 0;
+	padding: 1.5em 1em;
+	border-left: solid 6px #6bb6ff;
+	background: #f6f6f6;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+body#tinymce.wp-editor .box23 {
+	position: relative;
+	max-width: 400px;
+	margin: 2em 0 2em 40px;
+	padding: 20px;
+	border-radius: 30px;
+	background: #fff0c6;
+}
+
+body#tinymce.wp-editor .box23:before {
+	position: absolute;
+	bottom: 0;
+	left: -40px;
+	color: #fff0c6;
+	font-family: FontAwesome;
+	font-size: 15px;
+	content: "\f111";
+}
+
+body#tinymce.wp-editor .box23:after {
+	position: absolute;
+	bottom: 0;
+	left: -23px;
+	color: #fff0c6;
+	font-family: FontAwesome;
+	font-size: 23px;
+	content: "\f111";
+}
+
+body#tinymce.wp-editor .box24 {
+	position: relative;
+	margin: 2em 0;
+	padding: 0.8em 1em;
+	background: #e6f4ff;
+	color: #5c98d4;
+	font-weight: bold;
+}
+
+body#tinymce.wp-editor .box24:after {
+	position: absolute;
+	top: 100%;
+	left: 30px;
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-top: 15px solid #e6f4ff;
+	content: "";
+}
+
+body#tinymce.wp-editor .box25 {
+	position: relative;
+	margin: 2em 5px;
+	padding: 1.5em 1em;
+	border: dashed 2px white;
+	background: #fff0cd;
+	box-shadow: 0 0 0 5px #fff0cd;
+	color: #454545;
+}
+
+body#tinymce.wp-editor .box25:after {
+	position: absolute;
+	top: -7px;
+	right: -7px;
+	border-width: 0 15px 15px 0;
+	border-style: solid;
+	border-color: #ffdb88 #fff #ffdb88;
+	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+	content: "";
+}
+/*ボタン*/
+body#tinymce.wp-editor .btn {
+	margin: 0.5em 0.5em 0.5em 0;
+	text-decoration: none !important;
+}
+body#tinymce.wp-editor .raised {
+	display: inline-block;
+	margin: 0.5em 0;
+	padding: 0.4em 1.3em;
+	border-radius: 3px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 2px 3px -2px rgba(0, 0, 0, 0.15);
+	color: #fff !important;
+	text-decoration: none;
+	vertical-align: middle;
+	transition: var(--wp--custom--transition--default);
+}
+body#tinymce.wp-editor a.btn:hover {
+	text-decoration: none;
+}
+body#tinymce.wp-editor .blue-bc {
+	background: #009EF3;
+}
+body#tinymce.wp-editor .red-bc {
+	background: #f88080;
+}
+body#tinymce.wp-editor .green-bc {
+	background: #90d581;
+}
+/*フラットボタン*/
+body#tinymce.wp-editor .flat1 {
+	display: inline-block;
+	padding: 0.25em 0.5em;
+	background: #ececec;
+	color: #00bcd4 !important;
+	font-weight: bold;
+}
+
+body#tinymce.wp-editor .flat2 {
+	display: inline-block;
+	padding: 0.3em 1em;
+	border: solid 2px #67c5ff;
+	border-radius: 3px;
+	color: #67c5ff !important;
+}
+body#tinymce.wp-editor .flat3 {
+	display: inline-block;
+	padding: 0.4em 1em;
+	border: double 4px #67c5ff;
+	border-radius: 3px;
+	color: #67c5ff !important;
+}
+
+body#tinymce.wp-editor .flat4,
+body#tinymce.wp-editor .flat5 {
+	display: inline-block;
+	padding: 0.5em 1em;
+	border: dashed 2px #67c5ff;
+	border-radius: 3px;
+	color: #67c5ff !important;
+}
+
+body#tinymce.wp-editor .flat6 {
+	display: inline-block;
+	position: relative;
+	padding: 0.5em 1em;
+	border-right: solid 4px #668ad8;
+	border-left: solid 4px #668ad8;
+	background: #e1f3ff;
+	color: #668ad8 !important;
+	font-weight: bold;
+}
+
+body#tinymce.wp-editor .flat7 {
+	display: inline-block;
+	position: relative;
+	padding: 0.25em 0;
+	color: #67c5ff !important;
+	font-weight: bold;
+}
+
+body#tinymce.wp-editor .flat7:before {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	border-radius: 3px;
+	background: #67c5ff !important;
+	content: "";
+}
+body#tinymce.wp-editor .flat8 {
+	display: inline-block;
+	position: relative;
+	padding: 0.25em 0.5em;
+	border-radius: 0 15px 15px 0;
+	background: #ececec;
+	color: #00bcd4 !important;
+	font-weight: bold;
+}
+
+body#tinymce.wp-editor .flat9 {
+	display: inline-block;
+	position: relative;
+	padding: 0.25em 0.5em;
+	background: #00bcd4;
+	color: #fff !important;
+	font-weight: bold;
+}
+
+body#tinymce.wp-editor .flat10 {
+	display: inline-block;
+	position: relative;
+	padding: 8px 10px 5px 10px;
+	border-bottom: solid 4px #ffa000;
+	border-radius: 15px 15px 0 0;
+	background: #fff1da;
+	color: #ffa000 !important;
+	font-weight: bold;
+}
+
+body#tinymce.wp-editor .flat11 {
+	display: inline-block;
+	position: relative;
+	padding: 0.5em 1em;
+	padding: 0.5em 1em;
+	border-right: solid 4px #668ad8;
+	border-left: solid 4px #668ad8;
+	background: repeating-linear-gradient(
+	-45deg,
+	#cce7ff,
+	#cce7ff 3px,
+	#e9f4ff 3px,
+	#e9f4ff 7px
+	);
+	text-shadow: 0 0 5px white;
+	color: #668ad8 !important;
+	font-weight: bold;
+}
+
+/*グラデーションボタン*/
+body#tinymce.wp-editor .grad1 {
+	display: inline-block;
+	padding: 0.5em 1em;
+	border-radius: 3px;
+	background: linear-gradient(45deg, #709dff 0%, #92e6ff 100%);
+	color: #fff !important;
+}
+body#tinymce.wp-editor .grad2 {
+	display: inline-block;
+	padding: 0.5em 1em;
+	border-radius: 3px;
+	background: linear-gradient(95deg, #ff7070 0%, #fdd973 100%);
+	color: #fff !important;
+}
+
+body#tinymce.wp-editor .grad3 {
+	display: inline-block;
+	padding: 7px 20px;
+	border-radius: 25px;
+	background: linear-gradient(45deg, #ffc107 0%, #ff8b5f 100%);
+	color: #fff !important;
+}
+
+body#tinymce.wp-editor .grad4 {
+	display: inline-block;
+	padding: 0.5em 1em;
+	background: linear-gradient(#6795fd 0%, #67ceff 100%);
+	color: #fff !important;
+}
+
+body#tinymce.wp-editor .cubic1 {
+	display: inline-block;
+	padding: 0.5em 1em;
+	border-bottom: solid 4px rgba(0, 0, 0, 0.27);
+	border-radius: 3px;
+	color: #fff !important;
+}
+
+body#tinymce.wp-editor .cubic2 {
+	display: inline-block;
+	position: relative;
+	padding: 6px 15px 4px;
+	border-bottom: solid 2px rgba(0, 0, 0, 0.2);
+	border-radius: 4px; /*角の丸み*/
+	box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.2),
+	0 2px 2px rgba(0, 0, 0, 0.19);
+	color: #fff !important;
+	font-weight: bold;
+}
+
+body#tinymce.wp-editor .cubic3 {
+	display: inline-block;
+	position: relative;
+	padding: 0.25em 0.5em;
+	border: solid 1px rgba(0, 0, 0, 0.19);
+	border-radius: 4px;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+	color: #fff !important;
+}
+/*引用別スタイル*/
+body#tinymce.wp-editor .quote_silver {
+	padding: 35px 1.5em;
+	border: none;
+	background: whitesmoke;
+}
+body#tinymce.wp-editor.quote_silver:before {
+	top: 10px;
+	left: 15px;
+	color: #dadada;
+}
+body#tinymce.wp-editor .quote_silver:after {
+	position: absolute;
+	right: 15px;
+	bottom: 10px;
+	color: #dadada;
+	font-family: FontAwesome;
+	font-size: 25px;
+	line-height: 1;
+	content: "\f10e";
+}
+body#tinymce.wp-editor .wp-more-tag {
+	height: 25px !important;
+}
+@media only screen and (min-width: 481px) {
+	body#tinymce.wp-editor .alignleft,
+	body#tinymce.wp-editor img.alignleft {
+	margin-right: 1.5em;
+	display: inline;
+	float: left;
+	}
+	body#tinymce.wp-editor .alignright,
+	body#tinymce.wp-editor img.alignright {
+	margin-left: 1.5em;
+	display: inline;
+	float: right;
+	}
+	body#tinymce.wp-editor .aligncenter,
+	body#tinymce.wp-editor img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	clear: both;
+	}
+}
