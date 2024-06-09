@@ -25,14 +25,14 @@
                                 <section class="card">
                                     <section class="form step0 js-step" step="0">
                                         <section class="form-body">
-                                            <h3 class="heading-3"><?php $q_a = get_field('q_a'); echo $q_a;?></h3>
+                                            <h3 class="heading-3"><?php $step0_質問 = get_field('step0_質問'); echo $step0_質問;?></h3>
                                             <section class="step0-buttons">
-                                                <button class="step0-button js-feel-btn js-guide-s0-1" value="<?php $a_aa = get_field('a_aa'); echo $a_aa;?>"
+                                                <button class="step0-button js-feel-btn js-guide-s0-1" value="<?php $step0_回答_1 = get_field('step0_回答_1'); echo $step0_回答_1;?>"
                                                     step-to="1">
-                                                    <?php $a_aa = get_field('a_aa'); echo $a_aa;?>
+                                                    <?php $step0_回答_1 = get_field('step0_回答_1'); echo $step0_回答_1;?>
                                                 </button>
-                                                <button class="step0-button js-feel-btn" value="<?php $a_ab = get_field('a_ab'); echo $a_ab;?>" step-to="1">
-                                                    <?php $a_ab = get_field('a_ab'); echo $a_ab;?>
+                                                <button class="step0-button js-feel-btn" value="<?php $step0_回答_2 = get_field('step0_回答_2'); echo $step0_回答_2;?>" step-to="1">
+                                                    <?php $step0_回答_2 = get_field('step0_回答_2'); echo $step0_回答_2;?>
                                                 </button>
                                             </section>
                                         </section>
@@ -43,40 +43,40 @@
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step1.png" />
                                         </header>
                                         <section class="form-body">
-                                            <h3 class="heading-3"><?php $q_b = get_field('q_b'); echo $q_b;?></h3>
-                                            <p class="heading-note"><?php $q_b_subtitle = get_field('q_b_subtitle'); echo $q_b_subtitle;?></p>
+                                            <h3 class="heading-3"><?php $step1_質問 = get_field('step1_質問'); echo $step1_質問;?></h3>
+                                            <p class="heading-note">(複数選択可)</p>
                                             <section class="select-buttons mt-l js-guide-s1-1">
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="<?php $a_ba = get_field('a_ba'); echo $a_ba;?>">
-                                                    <?php $a_ba = get_field('a_ba'); echo $a_ba;?>
+                                                    value="<?php $step1_回答_1 = get_field('step1_回答_1'); echo $step1_回答_1;?>">
+                                                    <?php $step1_回答_1 = get_field('step1_回答_1'); echo $step1_回答_1;?>
                                                 </button>
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="<?php $a_bb = get_field('a_bb'); echo $a_bb;?>">
-                                                    <?php $a_bb = get_field('a_bb'); echo $a_bb;?>
+                                                    value="<?php $step1_回答_2 = get_field('step1_回答_2'); echo $step1_回答_2;?>">
+                                                    <?php $step1_回答_2 = get_field('step1_回答_2'); echo $step1_回答_2;?>
                                                 </button>
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="<?php $a_bc = get_field('a_bc'); echo $a_bc;?>">
-                                                    <?php $a_bc = get_field('a_bc'); echo $a_bc;?>
+                                                    value="<?php $step1_回答_3 = get_field('step1_回答_3'); echo $step1_回答_3;?>">
+                                                    <?php $step1_回答_3 = get_field('step1_回答_3'); echo $step1_回答_3;?>
                                                 </button>
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="<?php $a_bd = get_field('a_bd'); echo $a_bd;?>">
-                                                    <?php $a_bd = get_field('a_bd'); echo $a_bd;?>
+                                                    value="<?php $step1_回答_4 = get_field('step1_回答_4'); echo $step1_回答_4;?>">
+                                                    <?php $step1_回答_4 = get_field('step1_回答_4'); echo $step1_回答_4;?>
                                                 </button>
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="<?php $a_be = get_field('a_be'); echo $a_be;?>">
-                                                    <?php $a_be = get_field('a_be'); echo $a_be;?>
+                                                    value="<?php $step1_回答_5 = get_field('step1_回答_5'); echo $step1_回答_5;?>">
+                                                    <?php $step1_回答_5 = get_field('step1_回答_5'); echo $step1_回答_5;?>
                                                 </button>
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="<?php $a_bf = get_field('a_bf'); echo $a_bf;?>">
-                                                    <?php $a_bf = get_field('a_bf'); echo $a_bf;?>
+                                                    value="<?php $step1_回答_6 = get_field('step1_回答_6'); echo $step1_回答_6;?>">
+                                                    <?php $step1_回答_6 = get_field('step1_回答_6'); echo $step1_回答_6;?>
                                                 </button>
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="<?php $a_bg = get_field('a_bg'); echo $a_bg;?>">
-                                                    <?php $a_bg = get_field('a_bg'); echo $a_bg;?>
+                                                    value="<?php $step1_回答_7 = get_field('step1_回答_7'); echo $step1_回答_7;?>">
+                                                    <?php $step1_回答_7 = get_field('step1_回答_7'); echo $step1_回答_7;?>
                                                 </button>
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="<?php $a_bh = get_field('a_bh'); echo $a_bh;?>">
-                                                    <?php $a_bh = get_field('a_bh'); echo $a_bh;?>
+                                                    value="<?php $step1_回答_8 = get_field('step1_回答_8'); echo $step1_回答_8;?>">
+                                                    <?php $step1_回答_8 = get_field('step1_回答_8'); echo $step1_回答_8;?>
                                                 </button>
                                             </section>
                                             <section class="step1-more-button-wrapper js-step1-more-button-wrapper">
@@ -85,46 +85,47 @@
                                                 </button>
                                             </section>
                                             <section class="select-buttons js-step1-additional-selectors hidden">
+
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="普通二種">
-                                                    普通二種
+                                                    value="<?php $step1_回答_9 = get_field('step1_回答_9'); echo $step1_回答_9;?>">
+                                                    <?php $step1_回答_9 = get_field('step1_回答_9'); echo $step1_回答_9;?>
                                                 </button>
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="大型二種">
-                                                    大型二種
+                                                    value="<?php $step1_回答_10 = get_field('step1_回答_10'); echo $step1_回答_10;?>">
+                                                    <?php $step1_回答_10 = get_field('step1_回答_10'); echo $step1_回答_10;?>
                                                 </button>
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="けん引免許">
-                                                    けん引免許
-                                                </button>
+                                                    value="<?php $step1_回答_11 = get_field('step1_回答_11'); echo $step1_回答_11;?>">
+                                                    <?php $step1_回答_11 = get_field('step1_回答_11'); echo $step1_回答_11;?>
+                                                </button> 
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="運行管理者(旅客)">
-                                                    運行管理者(旅客)
-                                                </button>
+                                                    value="<?php $step1_回答_12 = get_field('step1_回答_12'); echo $step1_回答_12;?>">
+                                                    <?php $step1_回答_12 = get_field('step1_回答_12'); echo $step1_回答_12;?>
+                                                </button> 
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="運行管理者(貨物)">
-                                                    運行管理者(貨物)
-                                                </button>
+                                                    value="<?php $step1_回答_13 = get_field('step1_回答_13'); echo $step1_回答_13;?>">
+                                                    <?php $step1_回答_13 = get_field('step1_回答_13'); echo $step1_回答_13;?>
+                                                </button> 
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="玉掛け">
-                                                    玉掛け
-                                                </button>
+                                                    value="<?php $step1_回答_14 = get_field('step1_回答_14'); echo $step1_回答_14;?>">
+                                                    <?php $step1_回答_14 = get_field('step1_回答_14'); echo $step1_回答_14;?>
+                                                </button> 
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="小型移動式クレーン">
-                                                    小型移動式クレーン
-                                                </button>
+                                                    value="<?php $step1_回答_15 = get_field('step1_回答_15'); echo $step1_回答_15;?>">
+                                                    <?php $step1_回答_15 = get_field('step1_回答_15'); echo $step1_回答_15;?>
+                                                </button> 
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="車両系建設機械">
-                                                    車両系建設機械
-                                                </button>
+                                                    value="<?php $step1_回答_16 = get_field('step1_回答_16'); echo $step1_回答_16;?>">
+                                                    <?php $step1_回答_16 = get_field('step1_回答_16'); echo $step1_回答_16;?>
+                                                </button> 
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="フォークリフト">
-                                                    フォークリフト
-                                                </button>
+                                                    value="<?php $step1_回答_17 = get_field('step1_回答_17'); echo $step1_回答_17;?>">
+                                                    <?php $step1_回答_17 = get_field('step1_回答_17'); echo $step1_回答_17;?>
+                                                </button> 
                                                 <button class="btn select-button js-multi-select-button" key="qualifications"
-                                                    value="その他">
-                                                    その他
-                                                </button>
+                                                    value="<?php $step1_回答_18 = get_field('step1_回答_18'); echo $step1_回答_18;?>">
+                                                    <?php $step1_回答_18 = get_field('step1_回答_18'); echo $step1_回答_18;?>
+                                                </button> 
                                             </section>
                                         </section>
                                         <footer class="form-footer">
@@ -141,31 +142,31 @@
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step2.png" />
                                         </header>
                                         <section class="form-body">
-                                            <h3 class="heading-3"><?php $q_ca = get_field('q_ca'); echo $q_ca; ?></h3>
+                                            <h3 class="heading-3"><?php $step2_質問 = get_field('step2_質問'); echo $step2_質問; ?></h3>
                                             <section class="select-buttons mt-l js-guide-s2-1">
                                                 <button class="btn select-button select-button-l js-select-button"
-                                                    key="employmentType" value="<?php $a_ca_text = get_field('a_ca_text'); echo $a_ca_text; ?>" to="3">
+                                                    key="employmentType" value="<?php $step2_回答_1_text = get_field('step2_回答_1_text'); echo $step2_回答_1_text; ?>" to="3">
                                                     <img class="select-button-image-l"
-                                                        src="<?php $a_ca_img = get_field('a_ca_img'); echo $a_ca_img; ?>" />
-                                                        <?php $a_ca_text = get_field('a_ca_text'); echo $a_ca_text; ?>
+                                                        src="<?php $step2_回答_1_image = get_field('step2_回答_1_image'); echo $step2_回答_1_image; ?>" />
+                                                    <?php $step2_回答_1_text = get_field('step2_回答_1_text'); echo $step2_回答_1_text; ?>
                                                 </button>
                                                 <button class="btn select-button select-button-l js-select-button"
-                                                    key="employmentType" value="業務委託" to="3">
+                                                    key="employmentType" value="<?php $step2_回答_2_text = get_field('step2_回答_2_text'); echo $step2_回答_2_text; ?>" to="3">
                                                     <img class="select-button-image-l"
-                                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/working_style_2.png" />
-                                                    業務委託
+                                                        src="<?php $step2_回答_2_image = get_field('step2_回答_2_image'); echo $step2_回答_2_image; ?>" />
+                                                    <?php $step2_回答_2_text = get_field('step2_回答_2_text'); echo $step2_回答_2_text; ?>
                                                 </button>
                                                 <button class="btn select-button select-button-l js-select-button"
-                                                    key="employmentType" value="アルバイト" to="3">
+                                                    key="employmentType" value="<?php $step2_回答_3_text = get_field('step2_回答_3_text'); echo $step2_回答_3_text; ?>" to="3">
                                                     <img class="select-button-image-l"
-                                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/working_style_3.png" />
-                                                    アルバイト
+                                                        src="<?php $step2_回答_3_image = get_field('step2_回答_3_image'); echo $step2_回答_3_image; ?>" />
+                                                    <?php $step2_回答_3_text = get_field('step2_回答_3_text'); echo $step2_回答_3_text; ?>
                                                 </button>
                                                 <button class="btn select-button select-button-l js-select-button"
-                                                    key="employmentType" value="その他" to="3">
+                                                    key="employmentType" value="<?php $step2_回答_4_text = get_field('step2_回答_4_text'); echo $step2_回答_4_text; ?>" to="3">
                                                     <img class="select-button-image-l"
-                                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/working_style_4.png" />
-                                                    その他
+                                                        src = "<?php $step2_回答_4_image = get_field('step2_回答_4_image'); echo $step2_回答_4_image; ?>" />
+                                                    <?php $step2_回答_4_text = get_field('step2_回答_4_text'); echo $step2_回答_4_text; ?>
                                                 </button>
                                             </section>
                                         </section>
@@ -189,39 +190,38 @@
                                         </header>
                                         <section class="form-body">
                                             <h3 class="heading-3">
-                                                転職はいつ頃がご希望ですか？
+                                                <?php $step3_質問 = get_field('step3_質問'); echo $step3_質問; ?>
                                             </h3>
                                             <section class="select-buttons mt-l js-guide-s3-1">
-                                                <button class="btn select-button select-button-l js-select-button" value="すぐに"
+                                                <button class="btn select-button select-button-l js-select-button" value="<?php $step3_回答_1_text = get_field('step3_回答_1_text'); echo $step3_回答_1_text; ?>"
                                                     key="relocationTiming" to="4">
                                                     <img class="select-button-image-l"
-                                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/seek_speed_1.png" />
-                                                    すぐに
+                                                        src="<?php $step3_回答_1_image = get_field('step3_回答_1_image'); echo $step3_回答_1_image; ?>" />
+                                                    <?php $step3_回答_1_text = get_field('step3_回答_1_text'); echo $step3_回答_1_text; ?>
                                                 </button>
-                                                <button class="btn select-button select-button-l js-select-button" value="1ヶ月以内"
+                                                <button class="btn select-button select-button-l js-select-button" value="<?php $step3_回答_2_text = get_field('step3_回答_2_text'); echo $step3_回答_2_text; ?>"
                                                     key="relocationTiming" to="4">
                                                     <img class="select-button-image-l"
-                                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/seek_speed_2.png" />
-                                                    1ヶ月以内
+                                                        src="<?php $step3_回答_2_image = get_field('step3_回答_2_image'); echo $step3_回答_2_image; ?>" />
+                                                    <?php $step3_回答_2_text = get_field('step3_回答_2_text'); echo $step3_回答_2_text; ?>
                                                 </button>
-                                                <button class="btn select-button select-button-l js-select-button" value="3ヶ月以内"
+                                                <button class="btn select-button select-button-l js-select-button" value="<?php $step3_回答_3_text = get_field('step3_回答_3_text'); echo $step3_回答_3_text; ?>"
                                                     key="relocationTiming" to="4">
                                                     <img class="select-button-image-l"
-                                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/seek_speed_3.png" />
-                                                    3ヶ月以内
+                                                        src="<?php $step3_回答_3_image = get_field('step3_回答_3_image'); echo $step3_回答_3_image; ?>" />
+                                                    <?php $step3_回答_3_text = get_field('step3_回答_3_text'); echo $step3_回答_3_text; ?>
                                                 </button>
-                                                <button class="btn select-button select-button-l js-select-button" value="6ヶ月以内"
+                                                <button class="btn select-button select-button-l js-select-button" value="<?php $step3_回答_4_text = get_field('step3_回答_4_text'); echo $step3_回答_4_text; ?>"
                                                     key="relocationTiming" to="4">
                                                     <img class="select-button-image-l"
-                                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/seek_speed_4.png" />
-                                                    6ヶ月以内
+                                                        src="<?php $step3_回答_4_image = get_field('step3_回答_4_image'); echo $step3_回答_4_image; ?>" />
+                                                    <?php $step3_回答_4_text = get_field('step3_回答_4_text'); echo $step3_回答_4_text; ?>
                                                 </button>
-                                                <button
-                                                    class="btn select-button select-button-l select-button-w100 js-select-button"
-                                                    value="未定" key="relocationTiming" to="4">
+                                                <button class="btn select-button select-button-l js-select-button" value="<?php $step3_回答_5_text = get_field('step3_回答_5_text'); echo $step3_回答_5_text; ?>"
+                                                    key="relocationTiming" to="4">
                                                     <img class="select-button-image-l"
-                                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/seek_speed_5.png" />
-                                                    未定
+                                                        src="<?php $step3_回答_5_image = get_field('step3_回答_5_image'); echo $step3_回答_5_image; ?>" />
+                                                    <?php $step3_回答_5_text = get_field('step3_回答_5_text'); echo $step3_回答_5_text; ?>
                                                 </button>
                                             </section>
                                         </section>
@@ -243,7 +243,7 @@
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step3.png" />
                                         </header>
                                         <section class="form-body">
-                                            <h3 class="heading-3">これまでの転職回数</h3>
+                                            <h3 class="heading-3"><?php $step3_質問_転職回数 = get_field('step3_質問_転職回数'); echo $step3_質問_転職回数;?></h3>
                                             <section class="input-wrapper">
                                                 <select class="input js-job-change-input js-guide-s4-1" key="pastJobChanges">
                                                     <option value="">---</option>
@@ -280,17 +280,17 @@
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step4.png" />
                                         </header>
                                         <section class="form-body">
-                                            <h3 class="heading-3">お仕事のご状況</h3>
+                                            <h3 class="heading-3"><?php $step4_質問 = get_field('step4_質問'); echo $step4_質問;?></h3>
                                             <section class="select-buttons mt-l js-guide-s5-1">
                                                 <button
                                                     class="btn select-button select-button-flex select-button-w100 js-select-button"
-                                                    value="離職中または退職確定" key="currentJobStatus" to="6">
-                                                    離職中または退職確定
+                                                    value="<?php $step4_回答_1 = get_field('step4_回答_1'); echo $step4_回答_1;?>" key="currentJobStatus" to="6">
+                                                    <?php $step4_回答_1 = get_field('step4_回答_1'); echo $step4_回答_1;?>
                                                 </button>
                                                 <button
                                                     class="btn select-button select-button-flex select-button-w100 js-select-button"
-                                                    value="現職中" key="currentJobStatus" to="6">
-                                                    現職中
+                                                    value="<?php $step4_回答_2 = get_field('step4_回答_2'); echo $step4_回答_2;?>" key="currentJobStatus" to="6">
+                                                    <?php $step4_回答_2 = get_field('step4_回答_2'); echo $step4_回答_2;?>
                                                 </button>
                                             </section>
                                         </section>
@@ -313,27 +313,26 @@
                                         </header>
                                         <section class="form-body">
                                             <h3 class="heading-3">
-                                                荷物の手積み手降ろしは可能ですか？
+                                                <?php $step4_2_質問 = get_field('step4_2_質問'); echo $step4_2_質問;?>
                                             </h3>
                                             <section class="select-buttons mt-l js-guide-s6-1">
-                                                <button class="btn select-button select-button-l js-select-button" value="問題なし"
+                                                <button class="btn select-button select-button-l js-select-button" value="<?php $step4_2_回答_1_text = get_field('step4_2_回答_1_text'); echo $step4_2_回答_1_text;?>"
                                                     key="liftingOperations" to="7">
                                                     <img class="select-button-image-l"
-                                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/carry_level_1.png" />
-                                                    問題なし
+                                                        src="<?php $step4_2_回答_1_image = get_field('step4_2_回答_1_image'); echo $step4_2_回答_1_image;?>" />
+                                                    <?php $step4_2_回答_1_text = get_field('step4_2_回答_1_text'); echo $step4_2_回答_1_text;?>
                                                 </button>
-                                                <button class="btn select-button select-button-l js-select-button" value="求人の条件次第"
+                                                <button class="btn select-button select-button-l js-select-button" value="<?php $step4_2_回答_2_text = get_field('step4_2_回答_2_text'); echo $step4_2_回答_2_text;?>"
                                                     key="liftingOperations" to="7">
                                                     <img class="select-button-image-l"
-                                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/carry_level_2.png" />
-                                                    求人の条件次第
+                                                        src="<?php $step4_2_回答_2_image = get_field('step4_2_回答_2_image'); echo $step4_2_回答_2_image;?>" />
+                                                    <?php $step4_2_回答_2_text = get_field('step4_2_回答_2_text'); echo $step4_2_回答_2_text;?>
                                                 </button>
-                                                <button
-                                                    class="btn select-button select-button-l select-button-w100 js-select-button"
-                                                    value="不可" key="liftingOperations" to="7">
+                                                <button class="btn select-button select-button-l select-button-w100 js-select-button"
+                                                    value="<?php $step4_2_回答_3_text = get_field('step4_2_回答_3_text'); echo $step4_2_回答_3_text;?>" key="liftingOperations" to="7">
                                                     <img class="select-button-image-l"
-                                                        src="<?php echo get_template_directory_uri(); ?>/assets/img/carry_level_3.png" />
-                                                    不可
+                                                        src="<?php $step4_2_回答_3_image = get_field('step4_2_回答_3_image'); echo $step4_2_回答_3_image;?>" />
+                                                    <?php $step4_2_回答_3_text = get_field('step4_2_回答_3_text'); echo $step4_2_回答_3_text;?>
                                                 </button>
                                             </section>
                                         </section>
@@ -354,46 +353,46 @@
                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step4.png" />
                                         </header>
                                         <section class="form-body">
-                                            <h3 class="heading-3">こだわり条件（複数選択可）</h3>
+                                            <h3 class="heading-3"><?php $step4_3_質問 = get_field('step4_3_質問'); echo $step4_3_質問;?></h3>
                                             <p class="heading-note">
                                                 <span class="text-red">※未選択でも、次のページへ進めます。</span>
                                             </p>
                                             <section class="select-buttons mt-l js-guide-s7-1">
-                                                <button class="btn select-button js-multi-select-button" value="日払い、前払いOK"
+                                                <button class="btn select-button js-multi-select-button" value="<?php $step4_3_回答_1 = get_field('step4_3_回答_1'); echo $step4_3_回答_1;?>"
                                                     key="preferences">
-                                                    日払い、前払いOK
+                                                    <?php $step4_3_回答_1 = get_field('step4_3_回答_1'); echo $step4_3_回答_1;?>
                                                 </button>
-                                                <button class="btn select-button js-multi-select-button" value="持病持ちOK"
+                                                <button class="btn select-button js-multi-select-button" value="<?php $step4_3_回答_2 = get_field('step4_3_回答_2'); echo $step4_3_回答_2;?>"
                                                     key="preferences">
-                                                    持病持ちOK
+                                                    <?php $step4_3_回答_2 = get_field('step4_3_回答_2'); echo $step4_3_回答_2;?>
                                                 </button>
-                                                <button class="btn select-button js-multi-select-button" value="刺青OK"
+                                                <button class="btn select-button js-multi-select-button" value="<?php $step4_3_回答_3 = get_field('step4_3_回答_3'); echo $step4_3_回答_3;?>"
                                                     key="preferences">
-                                                    刺青OK
+                                                    <?php $step4_3_回答_3 = get_field('step4_3_回答_3'); echo $step4_3_回答_3;?>
                                                 </button>
-                                                <button class="btn select-button js-multi-select-button" value="ひげOK"
+                                                <button class="btn select-button js-multi-select-button" value="<?php $step4_3_回答_4 = get_field('step4_3_回答_4'); echo $step4_3_回答_4;?>"
                                                     key="preferences">
-                                                    ひげOK
+                                                    <?php $step4_3_回答_4 = get_field('step4_3_回答_4'); echo $step4_3_回答_4;?>
                                                 </button>
-                                                <button class="btn select-button js-multi-select-button" value="茶髪OK"
+                                                <button class="btn select-button js-multi-select-button" value="<?php $step4_3_回答_5 = get_field('step4_3_回答_5'); echo $step4_3_回答_5;?>"
                                                     key="preferences">
-                                                    茶髪OK
+                                                    <?php $step4_3_回答_5 = get_field('step4_3_回答_5'); echo $step4_3_回答_5;?>
                                                 </button>
-                                                <button class="btn select-button js-multi-select-button" value="車内喫煙OK"
+                                                <button class="btn select-button js-multi-select-button" value="<?php $step4_3_回答_6 = get_field('step4_3_回答_6'); echo $step4_3_回答_6;?>"
                                                     key="preferences">
-                                                    車内喫煙OK
+                                                    <?php $step4_3_回答_6 = get_field('step4_3_回答_6'); echo $step4_3_回答_6;?>
                                                 </button>
-                                                <button class="btn select-button js-multi-select-button" value="寮、社宅あり"
+                                                <button class="btn select-button js-multi-select-button" value="<?php $step4_3_回答_7 = get_field('step4_3_回答_7'); echo $step4_3_回答_7;?>"
                                                     key="preferences">
-                                                    寮、社宅あり
+                                                    <?php $step4_3_回答_7 = get_field('step4_3_回答_7'); echo $step4_3_回答_7;?>
                                                 </button>
-                                                <button class="btn select-button js-multi-select-button" value="長距離希望"
+                                                <button class="btn select-button js-multi-select-button" value="<?php $step4_3_回答_8 = get_field('step4_3_回答_8'); echo $step4_3_回答_8;?>"
                                                     key="preferences">
-                                                    長距離希望
+                                                    <?php $step4_3_回答_8 = get_field('step4_3_回答_8'); echo $step4_3_回答_8;?>
                                                 </button>
                                                 <button class="btn select-button select-button-w100 js-multi-select-button"
-                                                    value="未経験者歓迎" key="preferences">
-                                                    未経験者歓迎
+                                                    value="<?php $step4_3_回答_9 = get_field('step4_3_回答_9'); echo $step4_3_回答_9;?>" key="preferences">
+                                                    <?php $step4_3_回答_9 = get_field('step4_3_回答_9'); echo $step4_3_回答_9;?>
                                                 </button>
                                             </section>
                                         </section>
@@ -491,69 +490,13 @@
                                             <section class="input-wrapper">
                                                 <select class="input js-input-birth-year js-guide-s9-2">
                                                     <option value="">---</option>
-                                                    <option value="2005">2005年</option>
-                                                    <option value="2004">2004年</option>
-                                                    <option value="2003">2003年</option>
-                                                    <option value="2002">2002年</option>
-                                                    <option value="2001">2001年</option>
-                                                    <option value="2000">2000年</option>
-                                                    <option value="1999">1999年</option>
-                                                    <option value="1998">1998年</option>
-                                                    <option value="1997">1997年</option>
-                                                    <option value="1996">1996年</option>
-                                                    <option value="1995">1995年</option>
-                                                    <option value="1994">1994年</option>
-                                                    <option value="1993">1993年</option>
-                                                    <option value="1992">1992年</option>
-                                                    <option value="1991">1991年</option>
-                                                    <option value="1990">1990年</option>
-                                                    <option value="1989">1989年</option>
-                                                    <option value="1988">1988年</option>
-                                                    <option value="1987">1987年</option>
-                                                    <option value="1986">1986年</option>
-                                                    <option value="1985">1985年</option>
-                                                    <option value="1984">1984年</option>
-                                                    <option value="1983">1983年</option>
-                                                    <option value="1982">1982年</option>
-                                                    <option value="1981">1981年</option>
-                                                    <option value="1980">1980年</option>
-                                                    <option value="1979">1979年</option>
-                                                    <option value="1978">1978年</option>
-                                                    <option value="1977">1977年</option>
-                                                    <option value="1976">1976年</option>
-                                                    <option value="1975">1975年</option>
-                                                    <option value="1974">1974年</option>
-                                                    <option value="1973">1973年</option>
-                                                    <option value="1972">1972年</option>
-                                                    <option value="1971">1971年</option>
-                                                    <option value="1970">1970年</option>
-                                                    <option value="1969">1969年</option>
-                                                    <option value="1968">1968年</option>
-                                                    <option value="1967">1967年</option>
-                                                    <option value="1966">1966年</option>
-                                                    <option value="1965">1965年</option>
-                                                    <option value="1964">1964年</option>
-                                                    <option value="1963">1963年</option>
-                                                    <option value="1962">1962年</option>
-                                                    <option value="1961">1961年</option>
-                                                    <option value="1960">1960年</option>
-                                                    <option value="1959">1959年</option>
-                                                    <option value="1958">1958年</option>
-                                                    <option value="1957">1957年</option>
-                                                    <option value="1956">1956年</option>
-                                                    <option value="1955">1955年</option>
-                                                    <option value="1954">1954年</option>
-                                                    <option value="1953">1953年</option>
-                                                    <option value="1952">1952年</option>
-                                                    <option value="1951">1951年</option>
-                                                    <option value="1950">1950年</option>
-                                                    <option value="1949">1949年</option>
-                                                    <option value="1948">1948年</option>
-                                                    <option value="1947">1947年</option>
-                                                    <option value="1946">1946年</option>
-                                                    <option value="1945">1945年</option>
-                                                    <option value="1944">1944年</option>
-                                                    <option value="1943">1943年</option>
+                                                    <?php  
+                                                    $step6_birthStart = get_field('step6_生まれ年度制限スタート');
+                                                    $birthEnd = get_field('step6_生まれ年度制限エンド');
+                                                    for ($i=$step6_birthStart; $i<=$birthEnd; $i++) {
+                                                        echo "<option value='".$i."年'>{$i}年</option>";
+                                                    }
+                                                    ?> 
                                                 </select>
                                             </section>
 
