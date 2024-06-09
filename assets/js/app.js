@@ -1,6 +1,3 @@
-
-
-
 !(() => {
   let currentStep = 0;
   const $ = document;
@@ -22,8 +19,6 @@
     liftingOperations: '', // お気持ちはどちらに近いですか？
     preferences: [] // こだわりの検索条件
   }
-
-  // console.log("Console.inputData===",inputData)
 
   const $steps = $.querySelectorAll('.js-step');
   const $stepBtns = $.querySelectorAll('.js-step-btn');
@@ -122,6 +117,7 @@
     const $el = e.currentTarget
     const value = $el.value
     inputData.feeling = value
+
     const to = $el.getAttribute('step-to')
     stepTo(to)
   }))
@@ -246,7 +242,7 @@
   const $addressInput = $.querySelector('.js-address-input')
   const $postalCodeInput = $.querySelector('.js-postalcode-input')
 
-  $prefInput.innerHTML = `<option value="" >都道府県</option>`
+  $prefInput.innerHTML = `<option value="" hidden>都道府県</option>`
     + Object.keys(__PISTON__.prefCity).map((pref) => (
       `<option value="${pref}">${pref}</option>`
     )).join('')
@@ -542,7 +538,7 @@
     setTimeout(() => {
       // const url = `${location.origin}/lp001/complete`
 
-      const url = `./lp001/complete.html`
+      const url = window.__PISTON__.submitUrl
       location.href = url
     }, 300)
   }
@@ -813,29 +809,4 @@
   })
   updateGuideArrow()
   window.addEventListener('resize', () => updateGuideArrow())
-})();
-
-
-
-
-
-
-//============================//
-// === companyModal.js === //
-//============================//
-
-!(() => {
-  const $companyModal = document.querySelector('.js-company-modal')
-  const $companyClose = document.querySelector('.js-company-close')
-  const $companyBtn = document.querySelector('.js-show-company-modal')
-  $companyBtn.addEventListener('click', (e) => {
-    e.preventDefault()
-    e.stopPropagation()
-    $companyModal.classList.remove('hidden')
-  })
-  $companyClose.addEventListener('click', (e) => {
-    e.preventDefault()
-    e.stopPropagation()
-    $companyModal.classList.add('hidden')
-  })
 })();
