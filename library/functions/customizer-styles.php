@@ -41,7 +41,7 @@ if ( ! function_exists( 'sng_customizer_css' ) ) {
 		// フォントサイズ
 		$font_size_sp = get_option( 'mb_font_size' ) ? get_option( 'mb_font_size' ) : '100';
 		$font_size_tb = get_option( 'tb_font_size' ) ? get_option( 'tb_font_size' ) : '107';
-		$font_size_pc = get_option( 'pc_font_size' ) ? get_option( 'pc_font_size' ) : '107';
+		$font_size_pc = get_option( 'pc_font_size' ) ? get_option( 'pc_font_size' ) : '100';
 
 		// フォント種類
 		$font_family = 'var(--wp--preset--font-family--default)';

@@ -18,6 +18,9 @@ require_once 'library/functions/widget.php';
 require_once 'library/functions/setup.php';
 require_once 'library/gutenberg/sango-theme-gutenberg.php';
 
+require_once 'sheetlibrary/google-api/vendor/autoload.php';
+require_once 'sheetlibrary/google-spreadsheet/src/autoload.php';
+
 if (is_user_logged_in()) {
 	require_once 'library/functions/classic-editor-styles.php';
 	require_once 'library/functions/custom-fields.php';

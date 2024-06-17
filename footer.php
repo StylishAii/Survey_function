@@ -12,8 +12,10 @@ do_action('sng_before_footer');
 <?php go_top_btn(); // トップへ戻るボタン ?>
 <?php wp_footer(); ?>
 </body>
+<script>
+	const site_url = "<?php echo site_url(); ?>";
+</script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/prefCity.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/companyModal.js"></script> 
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/endpoint.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/app.js"></script>
 

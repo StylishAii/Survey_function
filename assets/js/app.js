@@ -1,6 +1,6 @@
 !(() => {
   let currentStep = 0;
-  const $ = document;
+  // const $ = document;
   const inputData = {
     name: '',
     birthYear: '',
@@ -20,8 +20,10 @@
     preferences: [] // こだわりの検索条件
   }
 
-  const $steps = $.querySelectorAll('.js-step');
-  const $stepBtns = $.querySelectorAll('.js-step-btn');
+   // console.log("Console.inputData===",inputData)
+
+  const $steps = document.querySelectorAll('.js-step');
+  const $stepBtns = document.querySelectorAll('.js-step-btn');
   $stepBtns.forEach(
     ($stepBtn) => {
       $stepBtn.addEventListener('click', () => {
@@ -70,8 +72,8 @@
     }
   }
 
-  const $ErrorLabels = $.querySelectorAll('.js-error-label')
-  const $multiSelectButtons = $.querySelectorAll('.js-multi-select-button')
+  const $ErrorLabels = document.querySelectorAll('.js-error-label')
+  const $multiSelectButtons = document.querySelectorAll('.js-multi-select-button')
 
   $multiSelectButtons.forEach(($btn) => {
     $btn.addEventListener('click', (e) => {
@@ -90,7 +92,7 @@
     })
   })
 
-  const $selectBtns = $.querySelectorAll('.js-select-button')
+  const $selectBtns = document.querySelectorAll('.js-select-button')
   $selectBtns.forEach(($btn) => {
     $btn.addEventListener('click', (e) => {
       const $b = e.currentTarget
@@ -98,7 +100,7 @@
       const key = $b.getAttribute('key')
       const to = $b.getAttribute('to')
       inputData[key] = val
-      const $otherBtns = $.querySelectorAll(`.js-select-button[key="${key}"]`)
+      const $otherBtns = document.querySelectorAll(`.js-select-button[key="${key}"]`)
       $otherBtns.forEach(($ob) => {
         $ob.classList.remove('selected')
       })
@@ -112,26 +114,25 @@
   })
 
   // step0 =============
-  const $s0NextBtns = $.querySelectorAll('.js-feel-btn')
+  const $s0NextBtns = document.querySelectorAll('.js-feel-btn')
   $s0NextBtns.forEach(($btn) => $btn.addEventListener('click', (e) => {
     const $el = e.currentTarget
     const value = $el.value
-    inputData.feeling = value
-
+    inputData.feeling = value    
     const to = $el.getAttribute('step-to')
     stepTo(to)
   }))
 
 
   // step1 =============
-  const $s1MoreBtn = $.querySelector('.js-step1-more-button-wrapper')
-  const $s1AdditionalSelectors = $.querySelector('.js-step1-additional-selectors')
+  const $s1MoreBtn = document.querySelector('.js-step1-more-button-wrapper')
+  const $s1AdditionalSelectors = document.querySelector('.js-step1-additional-selectors')
   $s1MoreBtn.addEventListener('click', () => {
     $s1MoreBtn.classList.add('hidden')
     $s1AdditionalSelectors.classList.remove('hidden')
   })
-  const $s1ErrorLabel = $.querySelector('.js-s1-error-label')
-  const $s1NextBtn = $.querySelector('.js-s1-next-btn')
+  const $s1ErrorLabel = document.querySelector('.js-s1-error-label')
+  const $s1NextBtn = document.querySelector('.js-s1-next-btn')
   $s1NextBtn.addEventListener('click', () => {
     if (inputData.qualifications.length <= 0) {
       $s1ErrorLabel.classList.remove('hidden')
@@ -143,8 +144,8 @@
   // step1 end =============
 
   // step2 =================
-  const $s2ErrorLabel = $.querySelector('.js-s2-error-label')
-  const $s2NextBtn = $.querySelector('.js-s2-next-btn')
+  const $s2ErrorLabel = document.querySelector('.js-s2-error-label')
+  const $s2NextBtn = document.querySelector('.js-s2-next-btn')
   $s2NextBtn.addEventListener('click', () => {
     if (inputData.employmentType === '') {
       $s2ErrorLabel.classList.remove('hidden')
@@ -156,8 +157,8 @@
   // step2 end =============
 
   // step3 =================
-  const $s3ErrorLabel = $.querySelector('.js-s3-error-label')
-  const $s3NextBtn = $.querySelector('.js-s3-next-btn')
+  const $s3ErrorLabel = document.querySelector('.js-s3-error-label')
+  const $s3NextBtn = document.querySelector('.js-s3-next-btn')
   $s3NextBtn.addEventListener('click', () => {
     if (inputData.relocationTiming === '') {
       $s3ErrorLabel.classList.remove('hidden')
@@ -169,7 +170,7 @@
   // step3 end =============
 
   // step4 =================
-  const $s4input = $.querySelector('.js-job-change-input')
+  const $s4input = document.querySelector('.js-job-change-input')
   $s4input.addEventListener('change', (e) => {
     const $target = e.currentTarget
     inputData.pastJobChanges = $target.value
@@ -180,8 +181,8 @@
     }
   })
 
-  const $s4ErrorLabel = $.querySelector('.js-s4-error-label')
-  const $s4NextBtn = $.querySelector('.js-s4-next-btn')
+  const $s4ErrorLabel = document.querySelector('.js-s4-error-label')
+  const $s4NextBtn = document.querySelector('.js-s4-next-btn')
   $s4NextBtn.addEventListener('click', () => {
     if (inputData.pastJobChanges === '') {
       $s4ErrorLabel.classList.remove('hidden')
@@ -193,8 +194,8 @@
   // step4 end =============
 
   // step5 =================
-  const $s5ErrorLabel = $.querySelector('.js-s5-error-label')
-  const $s5NextBtn = $.querySelector('.js-s5-next-btn')
+  const $s5ErrorLabel = document.querySelector('.js-s5-error-label')
+  const $s5NextBtn = document.querySelector('.js-s5-next-btn')
   $s5NextBtn.addEventListener('click', () => {
     if (inputData.currentJobStatus === '') {
       $s5ErrorLabel.classList.remove('hidden')
@@ -206,8 +207,8 @@
   // step5 end =============
 
   // step6 =================
-  const $s6ErrorLabel = $.querySelector('.js-s6-error-label')
-  const $s6NextBtn = $.querySelector('.js-s6-next-btn')
+  const $s6ErrorLabel = document.querySelector('.js-s6-error-label')
+  const $s6NextBtn = document.querySelector('.js-s6-next-btn')
   $s6NextBtn.addEventListener('click', () => {
     if (inputData.employmentType === '') {
       $s6ErrorLabel.classList.remove('hidden')
@@ -223,8 +224,8 @@
   // step7 end =============
 
   // step8 =================
-  const $addressToggle = $.querySelector('.js-address-form-toggle')
-  const $addressForm = $.querySelector('.js-address-form')
+  const $addressToggle = document.querySelector('.js-address-form-toggle')
+  const $addressForm = document.querySelector('.js-address-form')
   $addressToggle.addEventListener('click', () => {
     if ($addressForm.classList.contains('hidden')) {
       $addressForm.classList.remove('hidden')
@@ -236,13 +237,13 @@
     updateGuideArrow()
   })
 
+  
+  const $prefInput = document.querySelector('.js-pref-input')
+  const $cityInput = document.querySelector('.js-city-input')
+  const $addressInput = document.querySelector('.js-address-input')
+  const $postalCodeInput = document.querySelector('.js-postalcode-input')
 
-  const $prefInput = $.querySelector('.js-pref-input')
-  const $cityInput = $.querySelector('.js-city-input')
-  const $addressInput = $.querySelector('.js-address-input')
-  const $postalCodeInput = $.querySelector('.js-postalcode-input')
-
-  $prefInput.innerHTML = `<option value="" hidden>都道府県</option>`
+  $prefInput.innerHTML = `<option value="" >都道府県</option>`
     + Object.keys(__PISTON__.prefCity).map((pref) => (
       `<option value="${pref}">${pref}</option>`
     )).join('')
@@ -316,8 +317,8 @@
     // $jobCounters.forEach(($el) => $el.classList.remove('hidden'))
   }
 
-  const $s8ErrorLabel = $.querySelector('.js-s8-error-label')
-  const $s8NextBtn = $.querySelector('.js-s8-next-btn')
+  const $s8ErrorLabel = document.querySelector('.js-s8-error-label')
+  const $s8NextBtn = document.querySelector('.js-s8-next-btn')
   $s8NextBtn.addEventListener('click', () => {
     const {
       postalCode,
@@ -353,8 +354,8 @@
   // step8 end =============
 
   // step9 =================
-  const $s9ErrorLabel = $.querySelector('.js-s9-error-label')
-  const $s9NextBtn = $.querySelector('.js-s9-next-btn')
+  const $s9ErrorLabel = document.querySelector('.js-s9-error-label')
+  const $s9NextBtn = document.querySelector('.js-s9-next-btn')
   $s9NextBtn.addEventListener('click', () => {
     if (inputData.birthYear === '' || inputData.name === '') {
       $s9ErrorLabel.classList.remove('hidden')
@@ -383,7 +384,7 @@
     }
   }
 
-  const $inputName = $.querySelector('.js-input-name')
+  const $inputName = document.querySelector('.js-input-name')
   $inputName.addEventListener('change', (e) => {
     const $target = e.currentTarget
     inputData.name = $target.value
@@ -396,7 +397,7 @@
     updateGuideArrow()
   })
 
-  const $inputBirthYear = $.querySelector('.js-input-birth-year')
+  const $inputBirthYear = document.querySelector('.js-input-birth-year')
   $inputBirthYear.addEventListener('change', (e) => {
     const $target = e.currentTarget
     inputData.birthYear = $target.value
@@ -409,8 +410,8 @@
   // step9 end =============
 
   // step10 =================
-  const $s10ErrorLabel = $.querySelector('.js-s10-error-label')
-  const $balloonName = $.querySelector('.js-balloon-name')
+  const $s10ErrorLabel = document.querySelector('.js-s10-error-label')
+  const $balloonName = document.querySelector('.js-balloon-name')
   const sanitize = (str) => {
     return str.replace(/&/g, '＆')
       .replace(/</g, '＜')
@@ -423,7 +424,7 @@
   const validateEmail = (val) => {
     // - [ ]  未入力はOK
     if (!val) {
-      return true
+      return 'メールアドレスを入力してください'
     }
 
     // - [ ]  メールアドレスに@がない場合にCVボタンを押すとはエラー表示
@@ -474,7 +475,7 @@
       return false;
     }
   }
-  const $inputTel = $.querySelector('.js-input-tel')
+  const $inputTel = document.querySelector('.js-input-tel')
   $inputTel.addEventListener('change', (e) => {
     const $target = e.currentTarget
     inputData.tel = $target.value
@@ -483,7 +484,7 @@
     updateCvBtnStatus()
     updateGuideArrow()
   })
-  const $inputEmail = $.querySelector('.js-input-email')
+  const $inputEmail = document.querySelector('.js-input-email')
   $inputEmail.addEventListener('change', (e) => {
     const $target = e.currentTarget
     inputData.email = $target.value
@@ -493,7 +494,7 @@
     updateGuideArrow()
   })
 
-  const $cvBtn = $.querySelector('.js-cv-btn')
+  const $cvBtn = document.querySelector('.js-cv-btn')
   const updateCvBtnStatus = () => {
     if (validateS10()) {
       $cvBtn.classList.add('active')
@@ -517,77 +518,71 @@
   const submit = () => {
     if (isSubmitting === true) return
     isSubmitting = true
-    const method = "POST";
-    const body = JSON.stringify(inputData);
-    const headers = {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json',
-      'x-api-key': window.__PISTON__.key
+
+    function convertToString(arr) {
+      let result = "";
+      for(let i in arr) {
+        result += arr[i] + ",";
+      }
+      return result.slice(0, result.length);
     }
-    const url = window.__PISTON__.submitUrl
+    inputData.qualifications = convertToString(inputData.qualifications);
+    inputData.preferences = convertToString(inputData.preferences);
 
-    fetch(url, { method, headers, body })
-      .then((res) => {
-        // stepTo('11')
-        isSubmitting = false
-      })
-    // .catch( () => {
-    //   window.alert('送信に失敗しました')
-    //   isSubmitting = false
-    // });
-    setTimeout(() => {
-      // const url = `${location.origin}/lp001/complete`
-
-      const url = window.__PISTON__.submitUrl
-      location.href = url
-    }, 300)
+    const body = JSON.stringify(inputData);
+    
+    fetch(`${site_url}/?rest_route=/sng/v1/cb/register`, {
+      method: 'POST',
+      body,
+    }).then(function(response){
+      location.replace(location.origin + "/?page_id=5361")
+    })
   }
-
-  // location.replace(location.origin + "/lp001/complete")
+ 
   // step10 end =============
-
   // guide arrows
-  const $guideArrow = $.querySelector('.js-guide-arrow')
+  const $guideArrow = document.querySelector('.js-guide-arrow')
   const ARROW_MARGIN_Y = -10
-  const updateGuideArrowPos = ($target) => {
+  const updateGuideArrowPos = ($target) => {  
+    window.scrollTo(0, 280);
     const bound = $target.getBoundingClientRect()
     let x = bound.x + bound.width + window.scrollX;
     let y = bound.y + window.scrollY + ARROW_MARGIN_Y;
     $guideArrow.style.transform = `translate3d(${x}px, ${y}px, 0)`
   }
 
-  const $guideOverlays = $.querySelectorAll('.js-overlay')
-  const $guideS0_1 = $.querySelector('.js-guide-s0-1')
-  const $guideS1_1 = $.querySelector('.js-guide-s1-1')
-  const $guideS1_2 = $.querySelector('.js-guide-s1-2')
-  const $guideS2_1 = $.querySelector('.js-guide-s2-1')
-  const $guideS2_2 = $.querySelector('.js-guide-s2-2')
-  const $guideS2_overlay = $.querySelector('.js-guide-s2-overlay')
-  const $guideS3_1 = $.querySelector('.js-guide-s3-1')
-  const $guideS3_2 = $.querySelector('.js-guide-s3-2')
-  const $guideS4_1 = $.querySelector('.js-guide-s4-1')
-  const $guideS4_2 = $.querySelector('.js-guide-s4-2')
-  const $guideS5_1 = $.querySelector('.js-guide-s5-1')
-  const $guideS5_2 = $.querySelector('.js-guide-s5-2')
-  const $guideS6_1 = $.querySelector('.js-guide-s6-1')
-  const $guideS6_2 = $.querySelector('.js-guide-s6-2')
-  const $guideS7_1 = $.querySelector('.js-guide-s7-1')
-  const $guideS7_2 = $.querySelector('.js-guide-s7-2')
-  const $guideS7_overlay = $.querySelector('.js-guide-s7-overlay')
-  const $guideS8_1 = $.querySelector('.js-guide-s8-1')
-  const $guideS8_2 = $.querySelector('.js-guide-s8-2')
-  const $guideS8_3 = $.querySelector('.js-guide-s8-3')
-  const $guideS8_4 = $.querySelector('.js-guide-s8-4')
-  const $guideS8_5 = $.querySelector('.js-guide-s8-5')
-  const $guideS8_overlay = $.querySelector('.js-guide-s8-overlay')
-  const $guideS9_1 = $.querySelector('.js-guide-s9-1')
-  const $guideS9_2 = $.querySelector('.js-guide-s9-2')
-  const $guideS9_3 = $.querySelector('.js-guide-s9-3')
-  const $guideS9_overlay = $.querySelector('.js-guide-s9-overlay')
-  const $guideS10_1 = $.querySelector('.js-guide-s10-1')
-  const $guideS10_2 = $.querySelector('.js-guide-s10-2')
-  const $guideS10_3 = $.querySelector('.js-guide-s10-3')
-  const $guideS10_overlay = $.querySelector('.js-guide-s10-overlay')
+  const $guideOverlays = document.querySelectorAll('.js-overlay')
+  const $guideS0_1 = document.querySelector('.js-guide-s0-1')
+  const $guideS1_1 = document.querySelector('.js-guide-s1-1')
+  const $guideS1_2 = document.querySelector('.js-guide-s1-2')
+  const $guideS2_1 = document.querySelector('.js-guide-s2-1')
+  const $guideS2_2 = document.querySelector('.js-guide-s2-2')
+  const $guideS2_overlay = document.querySelector('.js-guide-s2-overlay')
+  const $guideS3_1 = document.querySelector('.js-guide-s3-1')
+  const $guideS3_2 = document.querySelector('.js-guide-s3-2')
+  const $guideS4_1 = document.querySelector('.js-guide-s4-1')
+  const $guideS4_2 = document.querySelector('.js-guide-s4-2')
+  const $guideS5_1 = document.querySelector('.js-guide-s5-1')
+  const $guideS5_2 = document.querySelector('.js-guide-s5-2')
+  const $guideS6_1 = document.querySelector('.js-guide-s6-1')
+  const $guideS6_2 = document.querySelector('.js-guide-s6-2')
+  const $guideS7_1 = document.querySelector('.js-guide-s7-1')
+  const $guideS7_2 = document.querySelector('.js-guide-s7-2')
+  const $guideS7_overlay = document.querySelector('.js-guide-s7-overlay')
+  const $guideS8_1 = document.querySelector('.js-guide-s8-1')
+  const $guideS8_2 = document.querySelector('.js-guide-s8-2')
+  const $guideS8_3 = document.querySelector('.js-guide-s8-3')
+  const $guideS8_4 = document.querySelector('.js-guide-s8-4')
+  const $guideS8_5 = document.querySelector('.js-guide-s8-5')
+  const $guideS8_overlay = document.querySelector('.js-guide-s8-overlay')
+  const $guideS9_1 = document.querySelector('.js-guide-s9-1')
+  const $guideS9_2 = document.querySelector('.js-guide-s9-2')
+  const $guideS9_3 = document.querySelector('.js-guide-s9-3')
+  const $guideS9_overlay = document.querySelector('.js-guide-s9-overlay')
+  const $guideS10_1 = document.querySelector('.js-guide-s10-1')
+  const $guideS10_2 = document.querySelector('.js-guide-s10-2')
+  const $guideS10_3 = document.querySelector('.js-guide-s10-3')
+  const $guideS10_overlay = document.querySelector('.js-guide-s10-overlay')
 
   const updateGuideArrow = () => {
     hideOverlays()
